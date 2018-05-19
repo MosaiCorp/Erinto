@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Erinto</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+		<link rel="stylesheet" href="css/style.css" />
+		<link href="https://fonts.googleapis.com/css?family=Skranji" rel="stylesheet"> 
+	</head>
+	<body>
+	<script src="js/jquery-3.3.1.min.js"></script>
+		<script src="https://threejs.org/build/three.min.js"></script>
+<script src="https://threejs.org/examples/js/libs/stats.min.js"></script>
+<script src="https://threejs.org/examples/js/controls/PointerLockControls.js"></script>
+		<div id="blocker">
+			<header>
+		   <h1>Ingenial</h1>
+		   <p>genera los laberintos que desee, y no te pierdas...</p>
+		</header>
+		<section>
+		   <article>
+			   <h2>Mapa de juego</h2>
+			   <canvas id="canvas"></canvas>
+			   <ul>
+					<li id="run">Generar</li>
+					<li id="start">Imprimir 3D</li>
+				</ul>
+				Altura:<input type="number" id="altura" value="10">
+				Anchura:<input type="number" id="anchura" value="10">
+			  <div id="render"></div>
+		   </article>
+		</section>
+		
+		<footer>
+			creado por Industrias mosaiCorp
+		
+			<div id="instructions">
+				<span style="font-size:25px">Jugar</span>
+				<br />
+				(W, A, S, D = Movimiento, SPACE = Salto, ESC = Salir de pantalla completa)
+			</div>
+</footer>
+		</div>
+
+		<script src="js/main.js">
+			
+		</script>
+	</body>
+</html>
