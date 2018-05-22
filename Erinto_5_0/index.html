@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Erinto</title>
+		<link rel="icon" type="image/png" href="textures/icono.png" />
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+		<link rel="stylesheet" href="css/style.css" />
+		<link href="https://fonts.googleapis.com/css?family=Skranji" rel="stylesheet"> 
+		<script src="js/jquery-3.3.1.min.js"></script>
+		<script src="https://threejs.org/build/three.min.js"></script>
+		<script src="https://threejs.org/examples/js/libs/stats.min.js"></script>
+		<script src="https://threejs.org/examples/js/controls/PointerLockControls.js"></script>
+	</head>
+	<body>
+		<div id="blocker">
+			<div class="vertical-menu">
+				<li class="active">opciones</a>
+				<li>Altura:<input type="number" id="altura" value="10"></a>
+				<li>Anchura:<input type="number" id="anchura" value="10"></a>
+				<li id="run">1º Generar</li>
+				<li id="create">2º Construir</li>
+				<li>
+					<div id="instructions">
+						<span style="font-size:25px">Jugar</span>
+					</div>
+				</li>
+				<li id="tiempoE">T Aprox: </li>
+				<li id="tiempo">Tiempo: </li>
+				<li id="tiempo2">Efi: </li>
+				
+				<li id="butAd" class="active">opciones avanzadas</a>
+				
+			</div> 
+			<header>
+			   <h1>Erinto</h1>
+			   <p>genera los laberintos que desee, y no te pierdas... (W, A, S, D = Movimiento, SPACE = Salto, ESC = Salir)</p>
+			</header>
+			<article>
+				<h2>Mapa de juego</h2>
+				<canvas id="canvas"></canvas>
+				<div id="render"></div>
+			</article>
+			<div id="advanced">
+					<hgroup>
+						<h2>Advanced options</h2>
+					</hgroup>
+				<table style="width:100%">
+					<tr>
+						<tr>
+						<td>T:<input type="number" id="Trand" value="1000"><br>
+						L:<input type="number" id="Lrand" value="100"><br>
+						I:<input type="number" id="Irand" value="1"></td>
+						<td>Aumentar el valor de cada seccion disminuye la<br>
+						probabilidad de que se genere cada estructura</td>
+						</tr>
+						<tr>
+						<td>Campo de visión: <u id="visionVal" >400</u><br><Input type="range" id="vision" min="40" max="800" value="400"></td>
+						
+						<td>Si el campo de visión es excesivamente grande no se <br>
+						podrán cargar los laberintos más grandes</td>
+						</tr>
+						
+						<tr>
+						
+						
+						<td>Mini mapa: <input type="checkbox" id="miniMapa">
+						</td>
+						<td>El mini mapa son los padres</td>
+						</tr>
+						
+					</tr>
+				</table> 
+			
+			
+			</div>
+			</section>
+			<footer>
+				V 5.0 creado por Industrias mosaiCorp <a href="https://github.com/MosaiCorp/Erinto">>GitHub<</a>
+			</footer>
+		</div>
+		
+		<script src="js/main.js"></script>
+	</body>
+</html>
